@@ -45,6 +45,10 @@ body {
   margin: 16px 0;
 }
 
+.ulmobile{
+  display:none;
+}
+
 .box span {
   font-size: 20px;
   margin-right: 15px;
@@ -132,6 +136,57 @@ color:white;
 
 }
 
+@media screen and (max-width:800px){
+.topnav{
+  width:100%;
+}
+
+.ulmobile{
+  list-style-type: none;
+  display: flex;
+}
+
+b{
+  font-size:1.8rem;
+  margin:1.2rem;
+  padding:0%;
+}
+
+ul{
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+  p{
+    width:100%;
+    height:680px;
+    font-size:10px;
+    transform:translate(0px,-30px);
+  }
+  img{
+    display:none;
+  }
+
+.bgr  {
+  display:none;
+}
+  .container{
+  flex-direction: column;
+  }
+.mobileHeader{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  } 
+.button{
+  display:none;
+}
+#navbar{
+ display:none;
+}
+
+  }
+
 </style>
 </div>
     <meta charset="utf-8">
@@ -143,7 +198,7 @@ color:white;
   <head>
   <link rel="stylesheet" href="style.ccs">
  <div id="navbar" class="topnav">
-  <a href="index.html" style="font-family: 'Helvetica';";>Home</a>
+  <a href="test.html" style="font-family: 'Helvetica';";>Home</a>
   <a href="about.html" style="font-family: 'Helvetica';">About</a>
   <a class="active" href="contact.html" style="font-family: 'Helvetica'; color:white">Send me a message</a>
   <a href="booksession.html" style="font-family: 'Helvetica';">Book a lesson</a>
@@ -165,6 +220,14 @@ What do you need help with? Specify subjects and grade level:<br>
 <input type="submit" value="Send">
 <input type="reset" value="Reset">
 </form>
+<div class="ulmobile">
+  <ul>
+  <li><ahref="index.html" style=" font-family: 'Helvetica';";>Home</a><li>
+  <li><a href="about.html" style="font-family: 'Helvetica';">About</a></li>
+  <li><a href="contact.html" style="font-family: 'Helvetica';">Send me a message</a></li>
+  <li><a href="booksession.html" style="font-family: 'Helvetica';">Book a lesson</a></li>
+  </ul>
+</div>
 <ul>
     <li><a href="mailto:aldon2004@hotmail.com" style="font-size:18px";> Send me an email </a></li>
     <li><a href="www.linkedin.com/in/aldo-mayme-martinez" style="font-size:18px";> Linkedin </a></li>
